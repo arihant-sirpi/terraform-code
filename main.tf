@@ -2,7 +2,7 @@ provider "aws" {
 region = var.aws_region
 shared_config_files      = ["/root/.aws/conf"]
 shared_credentials_files = ["/root/.aws/creds"]
-profile = default
+profile = "default"
 }
 
 module "vpc" {
